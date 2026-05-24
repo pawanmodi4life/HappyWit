@@ -1,13 +1,13 @@
+# HappyWit GitHub Pages Website
 
-# HappyWit Website
+This is a static GitHub Pages-ready website.
 
-## Setup
-```bash
-npm install
-npm run dev
-```
+## How to deploy
+1. Upload all files from this ZIP to the root of your GitHub repo.
+2. Go to Settings → Pages.
+3. Select branch: main
+4. Select folder: /root
+5. Save.
 
-## Build
-```bash
-npm run build
-```
+Live URL:
+https://pawanmodi4life.github.io/HappyWit/

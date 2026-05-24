@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HappyWit Event Studio</title>
+  <meta name="description" content="HappyWit Event Studio - Creative event, content, design and immersive brand experience studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#123CFF;
+      --navy:#07182F;
+      --sky:#83C9FF;
+      --bg:#F4F7FC;
+      --muted:rgba(7,24,47,.68);
+      --white:#fff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,Arial,sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(139,203,255,.28), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(18,60,255,.14), transparent 28%),
+        linear-gradient(180deg,#F9FBFF 0%,#EAF1FB 100%);
+      color:var(--navy);
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1280px;margin:0 auto;padding:0 24px}
+    .nav{
+      position:sticky;top:16px;z-index:50;
+      max-width:1280px;margin:16px auto 0;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 24px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.75);
+      background:rgba(255,255,255,.72);
+      box-shadow:0 18px 45px rgba(7,24,47,.07);
+      backdrop-filter:blur(18px);
+    }
+    .logo-wrap{display:flex;align-items:center;gap:12px}
+    .logo-mark{
+      width:44px;height:44px;border-radius:50%;
+      background:linear-gradient(135deg,#83C9FF,#123CFF);
+      display:flex;align-items:center;justify-content:center;
+      color:#fff;font-weight:900;letter-spacing:-1px;
+      box-shadow:0 14px 35px rgba(18,60,255,.25);
+    }
+    .logo-text strong{display:block;font-size:21px;font-weight:900;letter-spacing:.16em;text-transform:capitalize;line-height:1}
+    .logo-text span{display:block;font-size:10px;font-weight:700;letter-spacing:.45em;text-transform:uppercase;color:rgba(7,24,47,.55);margin-top:5px}
+    .nav-links{display:flex;gap:32px;font-weight:700;font-size:14px;color:rgba(7,24,47,.7)}
+    .nav-links a:hover{color:var(--blue)}
+    .hero{padding:72px 0 64px}
+    .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:48px;align-items:center}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid rgba(18,60,255,.15);
+      background:#fff;border-radius:999px;padding:10px 16px;
+      font-size:14px;font-weight:800;color:rgba(7,24,47,.75);
+      box-shadow:0 10px 25px rgba(7,24,47,.05)
+    }
+    .spark{color:var(--blue)}
+    h1{
+      margin:28px 0 0;
+      font-size:clamp(48px,7vw,104px);
+      line-height:.95;letter-spacing:-.055em;font-weight:900;
+      max-width:920px;
+    }
+    .hero p{
+      margin:30px 0 0;
+      max-width:700px;
+      font-size:20px;line-height:1.65;
+      font-weight:500;color:var(--muted);
+    }
+    .btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      border-radius:999px;padding:15px 24px;font-size:14px;font-weight:900;
+      transition:.3s ease;
+    }
+    .btn.primary{background:var(--blue);color:white;box-shadow:0 16px 35px rgba(18,60,255,.25)}
+    .btn.primary:hover{transform:translateY(-2px);background:#082bd1}
+    .btn.secondary{background:#fff;color:var(--navy);border:1px solid rgba(18,60,255,.18)}
+    .btn.secondary:hover{transform:translateY(-2px);border-color:rgba(18,60,255,.45)}
+    .hero-card-wrap{position:relative}
+    .ring{
+      position:absolute;right:-48px;top:-48px;width:224px;height:224px;border-radius:50%;
+      border:32px solid var(--blue);opacity:.9
+    }
+    .glow{
+      position:absolute;left:-48px;bottom:40px;width:210px;height:210px;border-radius:50%;
+      background:rgba(123,203,255,.35);filter:blur(45px)
+    }
+    .hero-card-outer{
+      position:relative;border-radius:48px;border:1px solid rgba(255,255,255,.5);
+      background:rgba(255,255,255,.2);padding:18px;
+      box-shadow:0 30px 90px rgba(7,24,47,.14);
+      backdrop-filter:blur(24px);
+    }
+    .hero-card{
+      position:relative;overflow:hidden;border-radius:38px;
+      background:#03152D;color:#fff;padding:44px;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+      min-height:640px;
+    }
+    .hero-card:before{
+      content:"";position:absolute;inset:0;
+      background:
+        radial-gradient(circle at top left,rgba(123,203,255,.12),transparent 28%),
+        radial-gradient(circle at bottom right,rgba(18,60,255,.18),transparent 30%);
+    }
+    .hero-card > *{position:relative;z-index:2}
+    .eyebrow{
+      font-size:14px;font-weight:900;text-transform:uppercase;
+      letter-spacing:.35em;color:#7BCBFF;
+    }
+    .stack-title{margin-top:34px}
+    .stack-title div{
+      font-size:clamp(48px,6vw,82px);line-height:.95;
+      font-weight:900;letter-spacing:-.05em;
+    }
+    .hero-card p{color:rgba(255,255,255,.6);font-size:18px;margin-top:32px;line-height:1.55}
+    .chip-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:36px}
+    .chip{
+      border:1px solid rgba(255,255,255,.1);
+      background:rgba(255,255,255,.08);
+      border-radius:26px;padding:18px;font-weight:800;color:rgba(255,255,255,.85);
+      backdrop-filter:blur(16px);
+    }
+    .section{padding:64px 0}
+    .section-title{max-width:850px;margin-bottom:46px}
+    .section-title .label{
+      color:var(--blue);font-size:14px;font-weight:900;letter-spacing:.22em;text-transform:uppercase;margin-bottom:14px
+    }
+    .section-title h2{
+      margin:0;font-size:clamp(36px,4vw,56px);line-height:1.05;
+      font-weight:900;letter-spacing:-.04em;color:var(--navy)
+    }
+    .section-title p{
+      margin:20px 0 0;max-width:760px;font-size:18px;line-height:1.65;color:rgba(7,24,47,.7)
+    }
+    .why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .why-card{
+      background:#fff;border:1px solid rgba(18,60,255,.1);border-radius:28px;padding:26px;
+      min-height:235px;box-shadow:0 18px 45px rgba(7,24,47,.06);
+      transition:.3s ease;
+    }
+    .why-card:hover{transform:translateY(-5px);box-shadow:0 24px 55px rgba(18,60,255,.12)}
+    .why-card .num{font-size:32px;font-weight:900;color:rgba(18,60,255,.25)}
+    .why-card h3{font-size:20px;line-height:1.15;margin:34px 0 0;font-weight:900}
+    .why-card p{font-size:14px;line-height:1.65;color:rgba(7,24,47,.6);font-weight:500}
+    .dark-panel{
+      position:relative;overflow:hidden;border-radius:40px;background:var(--navy);
+      padding:40px;box-shadow:0 28px 65px rgba(7,24,47,.18);color:white
+    }
+    .dark-panel .circle-border{
+      position:absolute;right:-64px;top:-64px;width:224px;height:224px;border:28px solid var(--blue);border-radius:50%;opacity:.8
+    }
+    .process-grid{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .process-card{
+      border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.08);
+      border-radius:28px;padding:26px;backdrop-filter:blur(12px)
+    }
+    .process-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+    .icon-box{
+      width:56px;height:56px;border-radius:18px;background:#fff;color:var(--blue);
+      display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px
+    }
+    .process-card .num{font-size:30px;font-weight:900;color:rgba(255,255,255,.15)}
+    .process-card h3{font-size:24px;font-weight:900;margin:0}
+    .process-card p{font-size:14px;line-height:1.65;color:rgba(255,255,255,.6);font-weight:500}
+    .capabilities{display:flex;flex-wrap:wrap;gap:12px}
+    .capabilities span{
+      border-radius:999px;border:1px solid rgba(18,60,255,.15);
+      background:white;padding:13px 20px;font-size:14px;font-weight:900;
+      box-shadow:0 8px 20px rgba(7,24,47,.04)
+    }
+    .services-wrap{
+      position:relative;overflow:hidden;border-radius:46px;background:var(--navy);
+      padding:48px;color:#fff;box-shadow:0 30px 70px rgba(7,24,47,.22)
+    }
+    .services-wrap:before{
+      content:"";position:absolute;right:-48px;top:-80px;width:288px;height:288px;
+      border:34px solid var(--blue);border-radius:50%;opacity:.9
+    }
+    .services-wrap:after{
+      content:"";position:absolute;right:40px;top:40px;width:210px;height:210px;
+      background:rgba(18,60,255,.3);filter:blur(50px);border-radius:50%
+    }
+    .blue-glow{
+      position:absolute;left:-96px;bottom:-128px;width:288px;height:288px;border-radius:50%;
+      background:rgba(119,197,255,.1);filter:blur(45px)
+    }
+    .services-head{position:relative;z-index:2}
+    .services-head .label,.footer .label{
+      color:var(--sky);font-size:14px;font-weight:900;letter-spacing:.25em;text-transform:uppercase
+    }
+    .services-head h2,.footer h2{
+      margin:22px 0 0;max-width:900px;font-size:clamp(38px,5vw,64px);line-height:1.04;font-weight:900;letter-spacing:-.04em
+    }
+    .services-head p{max-width:760px;color:rgba(255,255,255,.7);font-size:18px;line-height:1.65;font-weight:500}
+    .services-grid{position:relative;z-index:2;margin-top:54px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .service-card{
+      position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.1);
+      background:rgba(255,255,255,.08);border-radius:32px;padding:28px;
+      backdrop-filter:blur(18px);transition:.35s ease
+    }
+    .service-card:hover{transform:translateY(-5px);border-color:rgba(18,60,255,.3);background:rgba(255,255,255,.1)}
+    .service-card:before{
+      content:"";position:absolute;right:-32px;top:-32px;width:144px;height:144px;
+      border-radius:50%;background:rgba(18,60,255,.1);filter:blur(26px)
+    }
+    .service-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+    .service-icon{
+      width:56px;height:56px;border-radius:18px;background:white;color:var(--blue);
+      display:flex;align-items:center;justify-content:center;font-size:24px
+    }
+    .service-card .num{font-size:40px;font-weight:900;color:rgba(255,255,255,.1)}
+    .service-card h3{font-size:24px;line-height:1.15;margin:0;font-weight:900}
+    .line{height:1px;width:80px;background:linear-gradient(90deg,var(--sky),transparent);margin:22px 0}
+    .service-card p{color:rgba(255,255,255,.62);line-height:1.65;font-weight:500}
+    .footer{
+      position:relative;overflow:hidden;border-radius:46px;background:var(--navy);
+      padding:52px;color:#fff;box-shadow:0 30px 70px rgba(7,24,47,.22)
+    }
+    .footer:before{
+      content:"";position:absolute;right:-48px;top:-80px;width:288px;height:288px;
+      border:34px solid var(--blue);border-radius:50%;opacity:.9
+    }
+    .footer:after{
+      content:"";position:absolute;right:40px;top:40px;width:210px;height:210px;background:rgba(18,60,255,.3);filter:blur(50px);border-radius:50%
+    }
+    .footer-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:end}
+    .footer p{color:rgba(255,255,255,.7);font-size:18px;line-height:1.65;max-width:650px}
+    .contact-card{
+      border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.08);
+      border-radius:32px;padding:28px;backdrop-filter:blur(14px)
+    }
+    .contact-item{margin-bottom:20px}
+    .contact-item:last-child{margin-bottom:0}
+    .contact-item span:first-child{
+      display:block;color:rgba(255,255,255,.35);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.18em
+    }
+    .contact-item a,.contact-item span:last-child{display:block;margin-top:5px;color:white;font-weight:700}
+    .footer-bottom{
+      position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+      margin-top:48px;border-top:1px solid rgba(255,255,255,.1);padding-top:28px
+    }
+    .footer-bottom p{font-size:14px;color:rgba(255,255,255,.45);margin:0}
+    .footer-buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .footer-buttons a{
+      border-radius:999px;padding:13px 20px;font-size:14px;font-weight:900;transition:.3s ease
+    }
+    .footer-buttons a:hover{transform:translateY(-2px)}
+    .white-btn{background:#fff;color:var(--blue)}
+    .outline-btn{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:white}
+    .blue-btn{border:1px solid rgba(131,201,255,.3);background:var(--blue);color:white;box-shadow:0 12px 30px rgba(18,60,255,.35)}
+    @media(max-width:1050px){
+      .hero-grid,.footer-grid{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:repeat(2,1fr)}
+      .process-grid{grid-template-columns:repeat(2,1fr)}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .nav-links{display:none}
+    }
+    @media(max-width:640px){
+      .container{padding:0 18px}
+      .nav{margin:10px 12px 0;padding:12px 16px}
+      .logo-text strong{font-size:17px}.logo-text span{letter-spacing:.25em}
+      .hero{padding-top:50px}
+      h1{font-size:48px}
+      .hero-card{padding:28px;min-height:auto}
+      .chip-grid,.why-grid,.process-grid,.services-grid{grid-template-columns:1fr}
+      .services-wrap,.footer{padding:30px;border-radius:34px}
+      .dark-panel{padding:28px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo-wrap" href="#">
+      <div class="logo-mark">HW</div>
+      <div class="logo-text">
+        <strong>Happywit</strong>
+        <span>Event Studio</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#why">Why</a>
+      <a href="#process">Process</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div>
+          <div class="pill"><span class="spark">✦</span> Event Studio • Design Studio • Creative Partner</div>
+          <h1>We turn ideas into happy brand experiences.</h1>
+          <p>HappyWit blends creative excellence, strategic thinking, immersive event design, content production and flawless execution to bring your vision to life.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="#contact">Start a Project →</a>
+            <a class="btn secondary" href="#services">Explore Services</a>
+          </div>
+        </div>
+
+        <div class="hero-card-wrap">
+          <div class="ring"></div>
+          <div class="glow"></div>
+          <div class="hero-card-outer">
+            <div class="hero-card">
+              <div class="eyebrow">Think Happy. Think Wit.</div>
+              <div class="stack-title">
+                <div>Design.</div>
+                <div>Content.</div>
+                <div>Events.</div>
+                <div>Experiences.</div>
+              </div>
+              <p>A modern creative studio for brands that want sharper ideas, cleaner design and smoother execution.</p>
+              <div class="chip-grid">
+                <div class="chip">Corporate Conferences</div>
+                <div class="chip">Partner Meets</div>
+                <div class="chip">Award Nights</div>
+                <div class="chip">Product Launches</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section container">
+      <div class="section-title">
+        <div class="label">Why HappyWit?</div>
+        <h2>Built for brands that need creativity with clarity.</h2>
+        <p>We combine idea-first thinking with design, production and execution discipline, so every experience feels sharp and seamless.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="num">01</div><h3>Creative Excellence</h3><p>Unique ideas and out-of-the-box solutions tailored to your brand needs.</p></div>
+        <div class="why-card"><div class="num">02</div><h3>Strategic Approach</h3><p>Focused thinking that connects every design and event decision to business goals.</p></div>
+        <div class="why-card"><div class="num">03</div><h3>End-to-End Solutions</h3><p>A single creative partner for event, content, digital and brand experience needs.</p></div>
+        <div class="why-card"><div class="num">04</div><h3>Expert Team</h3><p>Diverse expertise with strong attention to detail and a commitment to excellence.</p></div>
+        <div class="why-card"><div class="num">05</div><h3>Client-Centric Delivery</h3><p>Your success is our priority, and we go the extra mile to make it happen.</p></div>
+      </div>
+    </section>
+
+    <section id="process" class="section container">
+      <div class="section-title">
+        <div class="label">Our Process</div>
+        <h2>A simple journey from brief to brand impact.</h2>
+      </div>
+      <div class="dark-panel">
+        <div class="circle-border"></div>
+        <div class="process-grid">
+          <div class="process-card"><div class="process-top"><div class="icon-box">✦</div><div class="num">01</div></div><h3>Understand</h3><p>Identifying purpose, requirements and preferences.</p></div>
+          <div class="process-card"><div class="process-top"><div class="icon-box">◎</div><div class="num">02</div></div><h3>Analyse</h3><p>Reviewing past experiences, audience and structured brainstorming.</p></div>
+          <div class="process-card"><div class="process-top"><div class="icon-box">↗</div><div class="num">03</div></div><h3>Start</h3><p>Campaign planning, creative collateral design and event production.</p></div>
+          <div class="process-card"><div class="process-top"><div class="icon-box">▥</div><div class="num">04</div></div><h3>Feedback</h3><p>Evaluation, sentiment insights, observations and constructive critique.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-title">
+        <div class="label">What We Create</div>
+        <h2>Experiences across corporate, digital and brand communication touchpoints.</h2>
+        <p>HappyWit works as a creative partner for brands that want sharper ideas, cleaner design and smoother execution.</p>
+      </div>
+      <div class="capabilities">
+        <span>Corporate Conferences</span><span>Partner Meets</span><span>Award Nights</span><span>Product Launches</span>
+        <span>Brand Activations</span><span>Exhibition Booths</span><span>Digital Campaigns</span><span>Corporate Gifting</span>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <div class="services-wrap">
+        <div class="blue-glow"></div>
+        <div class="services-head">
+          <div class="label">Core Services</div>
+          <h2>Creative solutions crafted for immersive brand experiences.</h2>
+          <p>From event storytelling to digital campaigns, every service is designed to work together as one connected brand journey.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card"><div class="service-top"><div class="service-icon">✦</div><div class="num">01</div></div><h3>Campaign Ideation</h3><div class="line"></div><p>Concept narratives, theme development, storytelling frameworks and disruptive event formats.</p></div>
+          <div class="service-card"><div class="service-top"><div class="service-icon">✎</div><div class="num">02</div></div><h3>Graphic Design</h3><div class="line"></div><p>Visual identity systems, 2D/3D creative development, branding collaterals and launch creatives.</p></div>
+          <div class="service-card"><div class="service-top"><div class="service-icon">▣</div><div class="num">03</div></div><h3>Immersive Event Experiences</h3><div class="line"></div><p>End-to-end planning, immersive event design, stage experiences and execution for conferences, launches and gala nights.</p></div>
+          <div class="service-card"><div class="service-top"><div class="service-icon">▶</div><div class="num">04</div></div><h3>Motion Graphics & Animation</h3><div class="line"></div><p>Corporate AVs, thematic animation, product explainers and award sequences.</p></div>
+          <div class="service-card"><div class="service-top"><div class="service-icon">🎙</div><div class="num">05</div></div><h3>Content Production</h3><div class="line"></div><p>Scriptwriting, voiceovers, AVs, brand films and launch storytelling.</p></div>
+          <div class="service-card"><div class="service-top"><div class="service-icon">⚡</div><div class="num">06</div></div><h3>Digital Creatives</h3><div class="line"></div><p>Social media assets, high-performance ad creatives, digital campaigns and UI/UX experiences.</p></div>
+          <div class="service-card"><div class="service-top"><div class="service-icon">▤</div><div class="num">07</div></div><h3>Exhibitions & Expo Booths</h3><div class="line"></div><p>Stall design, fabrication, experiential installations and product-led showcases.</p></div>
+          <div class="service-card"><div class="service-top"><div class="service-icon">☻</div><div class="num">08</div></div><h3>Corporate Gifting Solutions</h3><div class="line"></div><p>Premium custom gifting, welcome kits and curated brand-led gift experiences.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="section container">
+      <div class="footer">
+        <div class="blue-glow"></div>
+        <div class="footer-grid">
+          <div>
+            <div class="label">HappyWit Event Studio</div>
+            <h2>Let’s collaborate and bring your vision to life!</h2>
+            <p>Creative ideas, immersive design, content production and seamless event execution — all under one studio.</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-item"><span>Email</span><a href="mailto:hello@happywit.in">hello@happywit.in</a></div>
+            <div class="contact-item"><span>Phone</span><a href="tel:+918287731816">+91 8287731816</a></div>
+            <div class="contact-item"><span>Website</span><a href="https://www.happywit.in">www.happywit.in</a></div>
+            <div class="contact-item"><span>Office</span><span>Plot No. 668-669, Deoli Village, Nai Basti, New Delhi - 110080</span></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 HappyWit Event Studio. All rights reserved.</p>
+          <div class="footer-buttons">
+            <a class="white-btn" href="mailto:hello@happywit.in">Email HappyWit</a>
+            <a class="outline-btn" href="https://www.happywit.in">Visit Website</a>
+            <a class="blue-btn" href="https://canva.link/h7baiydzr6qbwuk" target="_blank" rel="noopener noreferrer">View Company Credentials</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
