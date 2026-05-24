@@ -1,5 +1,1 @@
-import HappyWitWebsite from "./HappyWitWebsite";
-
-export default function App() {
-  return <HappyWitWebsite />;
-}
+import HappyWitWebsite from "./HappyWitWebsite"; export default function App(){ return <HappyWitWebsite /> }
