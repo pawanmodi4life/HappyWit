@@ -219,11 +219,18 @@ export default function HappyWitWebsite() {
 
         <nav className="relative z-10 flex items-center justify-between rounded-full border border-black/10 bg-white/85 px-5 py-4 shadow-sm backdrop-blur-xl">
           <div className="flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-[#2563EB] via-[#0EA5E9] to-[#FF9900] text-white">
-              <Sparkles size={21} />
-            </div>
-           <div className="flex items-center"> <img src="https://i.ibb.co/d397Q5n/Logo.png" alt="HappyWit" className="h-12 md:h-14 w-auto"/> </div>
-        </div> 
+  <div className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-[#2563EB] via-[#0EA5E9] to-[#FF9900] text-white">
+    <Sparkles size={21} />
+  </div>
+
+  <div className="flex items-center">
+    <img
+      src="https://i.ibb.co/d397Q5n/Logo.png"
+      alt="HappyWit"
+      className="h-12 md:h-14 w-auto"
+    />
+  </div>
+</div>
             <div className="hidden gap-8 text-sm text-black/60 lg:flex">
             <a href="#about">About</a>
             <a href="#services">Services</a>
