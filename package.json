@@ -1,26 +1,24 @@
 {
-  "name": "happywit-website",
-  "version": "1.0.0",
+  "name": "happywit",
   "private": true,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
     "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "framer-motion": "latest",
     "lucide-react": "latest",
-    "tailwindcss": "latest",
-    "@tailwindcss/vite": "latest"
+    "framer-motion": "latest"
   },
-  "devDependencies": {}
-}
-"engines": {
-  "node": "20.x",
-  "npm": "10.x"
+  "devDependencies": {},
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  }
 }
