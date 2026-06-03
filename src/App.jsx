@@ -183,7 +183,7 @@ const team = [
     name: "Pawan Modi",
     role: "Founder & Creative Head",
     experience: "15 Years Experience",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQG2zjc8BS82oQ/profile-displayphoto-scale_400_400/B56Zre1ZdCLcAo-/0/1764675132530?e=1781740800&v=beta&t=3tYyQNvz9d51jhg9iUOCm7oifnGfiD68VKRrjAgwOT4",
+    image: "https://i.ibb.co/RpxP0bYL/Chat-GPT-Image-Jun-3-2026-07-33-02-PM.png",
     desc: "15 years of experience across concept development, storytelling, 2D design, 3D visualization and AI-enhanced experience planning. Specializes in creating ideas, experiences and creative frameworks that connect brands with people.",
     skills: ["Creative Strategy", "Storytelling", "Experience Design", "2D Design", "3D Visualization", "AI Experiences"],
   },
