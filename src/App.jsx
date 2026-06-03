@@ -553,7 +553,7 @@ export default function HappyWitWebsite() {
       <section id="team" className="bg-[#EEF3FF] px-6 py-24 md:px-12 lg:px-20">
         <div className="mx-auto mb-12 max-w-4xl text-center">
           <p className="mb-4 font-semibold text-[#2563EB]">Leadership Team</p>
-          <h2 className="break-words text-4xl font-black tracking-[-0.035em] sm:text-5xl md:text-6xl">Creative thinking meets execution excellence.</h2>
+          <h2 className="break-words text-4xl font-black tracking-[-0.035em] sm:text-5xl md:text-6xl">Creativity With Purpose. Experiences With Impact.</h2>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-[#4B5563]">
             HappyWit is led by a combination of experience design, storytelling, production and operational expertise.
           </p>
