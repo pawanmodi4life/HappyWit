@@ -222,11 +222,13 @@ export default function HappyWitWebsite() {
             <div className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-[#2563EB] via-[#0EA5E9] to-[#FF9900] text-white">
               <Sparkles size={21} />
             </div>
-            <div>
-              <div className="text-xl font-black tracking-tight">HAPPYWIT</div>
-              <div className="text-[10px] uppercase tracking-[0.28em] text-black/45">Experience Intelligence Studio</div>
-            </div>
-          </div>
+           <div className="flex items-center">
+  <img
+    src="https://i.ibb.co/d397Q5n/Logo.png"
+    alt="HappyWit"
+    className="h-12 md:h-14 w-auto"
+  />
+</div>
           <div className="hidden gap-8 text-sm text-black/60 lg:flex">
             <a href="#about">About</a>
             <a href="#services">Services</a>
