@@ -143,7 +143,7 @@ const footprint = [
 
 const signatureConcepts = [
   {
-    title: "Human Upgrade Festival™",
+    title: "Human Upgrade Festival",
     desc: "A future-focused transformation experience where technology, wellness, creativity, money, career and culture come together.",
     icon: Sparkles,
   },
@@ -222,22 +222,19 @@ export default function HappyWitWebsite() {
             <div className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-[#2563EB] via-[#0EA5E9] to-[#FF9900] text-white">
               <Sparkles size={21} />
             </div>
-           <div className="flex items-center">
-  <img src="https://i.ibb.co/d397Q5n/Logo.png" alt="HappyWit" className="h-12 md:h-14 w-auto"/>
-</div>
-          <div className="hidden gap-8 text-sm text-black/60 lg:flex">
+           <div className="flex items-center"> <img src="https://i.ibb.co/d397Q5n/Logo.png" alt="HappyWit" className="h-12 md:h-14 w-auto"/> </div>
+        </div> 
+            <div className="hidden gap-8 text-sm text-black/60 lg:flex">
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#experience">Experience</a>
             <a href="#team">Team</a>
             <a href="#contact">Contact</a>
           </div>
-          <a
-            href="https://wa.me/919999538659"
+          <a href="https://wa.me/919999538659"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#111827] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1F2937]"
-          >
+            className="rounded-full bg-[#111827] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1F2937]">
             Book a Discovery Call
           </a>
         </nav>
