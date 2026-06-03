@@ -187,7 +187,7 @@ const team = [
     desc: "15 years of experience across concept development, storytelling, 2D design, 3D visualization and AI-enhanced experience planning. Specializes in creating ideas, experiences and creative frameworks that connect brands with people.",
     skills: ["Creative Strategy", "Storytelling", "Experience Design", "2D Design", "3D Visualization", "AI Experiences"],
   },
-  {
+ {
     name: "Rahul Tiwari",
     role: "Co-Founder & Operations Director",
     experience: "20 Years Experience",
