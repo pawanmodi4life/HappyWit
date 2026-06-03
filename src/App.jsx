@@ -223,11 +223,7 @@ export default function HappyWitWebsite() {
               <Sparkles size={21} />
             </div>
            <div className="flex items-center">
-  <img
-    src="https://i.ibb.co/d397Q5n/Logo.png"
-    alt="HappyWit"
-    className="h-12 md:h-14 w-auto"
-  />
+  <img src="https://i.ibb.co/d397Q5n/Logo.png" alt="HappyWit" className="h-12 md:h-14 w-auto"/>
 </div>
           <div className="hidden gap-8 text-sm text-black/60 lg:flex">
             <a href="#about">About</a>
