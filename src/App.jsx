@@ -223,7 +223,7 @@ export default function HappyWitWebsite() {
 
   <div className="flex items-center">
     <img
-      src="https://i.ibb.co/d397Q5n/Logo.png"
+      src="https://i.ibb.co/gbW55FPL/Logo.png"
       alt="HappyWit"
       className="h-12 md:h-14 w-auto"
     />
