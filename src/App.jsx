@@ -418,7 +418,7 @@ export default function HappyWitWebsite() {
           <p className="mb-4 font-semibold text-[#FF9900]">Experience Credibility</p>
           <h2 className="break-words text-4xl font-black tracking-[-0.035em] sm:text-5xl md:text-6xl">Built on years of real-world experience.</h2>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-[#4B5563]">
-            As a new company, HappyWit does not claim agency-owned work as its own. Instead, we bring deep hands-on experience across categories, geographies and event formats.
+            We bring deep hands-on experience across categories, geographies and event formats.
           </p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
