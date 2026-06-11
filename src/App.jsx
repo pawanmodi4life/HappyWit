@@ -41,7 +41,7 @@ const CardContent = ({ className = "", children, ...props }) => (
 
 const services = [
   {
-    title: "Brand Experiences",
+    title: "Brand Launches",
     desc: "Launches, activations and experiential campaigns designed to create recall and conversation.",
     icon: Rocket,
     image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?auto=format&fit=crop&w=1200&q=80",
@@ -53,7 +53,7 @@ const services = [
     image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    title: "Community Experiences",
+    title: "Community Gatherings",
     desc: "Creator ecosystems, member communities, culture-led gatherings and audience-first formats.",
     icon: Users,
     image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80",
@@ -153,7 +153,7 @@ const signatureConcepts = [
     icon: Compass,
   },
   {
-    title: "Employee Experience Festival",
+    title: "Employee Festival",
     desc: "Recognition, culture, learning and belonging combined into one immersive employee platform.",
     icon: HeartHandshake,
   },
@@ -163,7 +163,7 @@ const signatureConcepts = [
     icon: Users,
   },
   {
-    title: "Dealer Experience 2.0",
+    title: "Dealer Enagament 2.0",
     desc: "Gamified engagement, immersive showcases and partner-led growth experiences.",
     icon: Trophy,
   },
@@ -608,8 +608,8 @@ export default function HappyWitWebsite() {
                 desc: "People remember how they felt. Every experience begins with understanding audience emotion.",
               },
               {
-                title: "Story",
-                desc: "Stories create connection. Every experience starts with meaning before a stage is designed.",
+                title: "Connection",
+                desc: "Emotion create connection. Every experience starts with meaning before a stage is designed.",
               },
               {
                 title: "Participation",
@@ -629,7 +629,7 @@ export default function HappyWitWebsite() {
             <div className="col-span-full rounded-[2rem] bg-[#111827] p-8 text-white shadow-xl">
               <div className="text-sm font-semibold uppercase tracking-[0.2em] text-white/55">Result</div>
               <h3 className="mt-3 break-words text-4xl font-black">Memorable Experiences</h3>
-              <p className="mt-4 text-white/70">Emotion + Story + Participation + Technology</p>
+              <p className="mt-4 text-white/70">Emotion + Connection + Participation + Technology</p>
             </div>
           </div>
         </div>
@@ -647,7 +647,7 @@ export default function HappyWitWebsite() {
                 Something Remarkable
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-                Every experience starts with a story. Let's create yours.
+                Every experience starts with a emotion. Let's create yours.
               </p>
 
               <div className="mt-9 grid gap-5 sm:grid-cols-2">
