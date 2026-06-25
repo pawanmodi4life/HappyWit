@@ -536,7 +536,8 @@ export default function HappyWitWebsite() {
             <p className="mb-4 font-semibold text-[#2563EB]">Experience Categories</p>
             <h2 className="break-words text-4xl font-black tracking-[-0.035em] sm:text-5xl md:text-6xl">What we have helped create.</h2>
             <p className="mt-6 text-xl leading-relaxed text-[#4B5563]">
-              A legally safer way to communicate capability without showing client-owned or agency-owned past work.
+              Most event partners manage logistics. We design experiences.
+
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
