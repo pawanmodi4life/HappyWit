@@ -181,7 +181,7 @@ const experienceCategories = [
 const team = [
   {
     name: "Pawan Modi",
-    role: "Founder & Creative Head",
+    role: "Creative Intelligence Experience Director",
     experience: "15 Years Experience",
     image: "https://i.ibb.co/RpxP0bYL/Chat-GPT-Image-Jun-3-2026-07-33-02-PM.png",
     desc: "15 years of experience across concept development, storytelling, 2D design, 3D visualization and AI-enhanced experience planning. Specializes in creating ideas, experiences and creative frameworks that connect brands with people.",
@@ -191,7 +191,7 @@ const team = [
   /*
   {
     name: "Rahul Tiwari",
-    role: "Co-Founder & Operations Director",
+    role: "Operational Intelligence Experience Director",
     experience: "20 Years Experience",
     image: "https://media.licdn.com/dms/image/v2/D5603AQHsSgBHVY87WA/profile-displayphoto-shrink_800_800/B56ZcfmO7xHUAc-/0/1748581806843?e=1781740800&v=beta&t=h6X6A2K_5qpOcds_CZp369EZanO53UwnFKHKUYu89Xw",
     desc: "20 years of experience in event production, operations, logistics, execution and large-scale experience delivery. Expert in transforming ambitious ideas into flawlessly executed experiences.",
@@ -236,7 +236,7 @@ export default function HappyWitWebsite() {
             <a href="#team">Team</a>
             <a href="#contact">Contact</a>
           </div>
-          <a href="https://wa.me/919999538659"
+          <a href="https://wa.me/918851221600"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-[#111827] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1F2937]">
@@ -675,7 +675,7 @@ export default function HappyWitWebsite() {
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <a
-                  href="https://wa.me/919999538659"
+                  href="https://wa.me/918851221600"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full bg-[#FF9900] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#e88a00]"
