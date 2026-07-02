@@ -185,7 +185,7 @@ const team = [
     experience: "15 Years Experience",
     image: "https://i.ibb.co/RpxP0bYL/Chat-GPT-Image-Jun-3-2026-07-33-02-PM.png",
     desc: "Transforms ideas into immersive, AI-powered brand experiences.",
-    skills: ["Creative Strategy", "Storytelling", "Experience Design", "AI-Powered Experiences", "2D & 3D Visualization"],
+    skills: ["2D & 3D Creative Strategy", "Storytelling", "Experience Design", "AI-Powered Experiences",],
   },
 {
     name: "Rahul Tiwari",
@@ -193,7 +193,7 @@ const team = [
     experience: "20 Years Experience",
     image: "https://i.ibb.co/vxyYyJhS/1748581806843.jpg",
     desc: "Leads flawless event execution with operational excellence.",
-    skills: ["Event Operations", "Budget Management,", "Event Planning", "Global events"],
+    skills: ["Event Operations", "Budget Management", "Event Planning", "Global events"],
   },
 
   {
