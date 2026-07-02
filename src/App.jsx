@@ -181,7 +181,7 @@ const experienceCategories = [
 const team = [
   {
     name: "Pawan Modi",
-    role: "Creative Intelligence Experience Director",
+    role: "Creative Experience Director",
     experience: "15 Years Experience",
     image: "https://i.ibb.co/RpxP0bYL/Chat-GPT-Image-Jun-3-2026-07-33-02-PM.png",
     desc: "15 years of experience across concept development, storytelling, 2D design, 3D visualization and AI-enhanced experience planning. Specializes in creating ideas, experiences and creative frameworks that connect brands with people.",
@@ -189,7 +189,7 @@ const team = [
   },
 {
     name: "Rahul Tiwari",
-    role: "Operational Intelligence Experience Director",
+    role: "Operational Experience Director",
     experience: "20 Years Experience",
     image: "https://i.ibb.co/vxyYyJhS/1748581806843.jpg",
     desc: "20 years of experience in event production, operations, logistics, execution and large-scale experience delivery. Expert in transforming ambitious ideas into flawlessly executed experiences.",
