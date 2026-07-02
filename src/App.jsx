@@ -187,14 +187,21 @@ const team = [
     desc: "15 years of experience across concept development, storytelling, 2D design, 3D visualization and AI-enhanced experience planning. Specializes in creating ideas, experiences and creative frameworks that connect brands with people.",
     skills: ["Creative Strategy", "Storytelling", "Experience Design", "2D Design", "3D Visualization", "AI Experiences"],
   },
-
-
-  {
+{
     name: "Rahul Tiwari",
     role: "Operational Intelligence Experience Director",
     experience: "20 Years Experience",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQHsSgBHVY87WA/profile-displayphoto-shrink_800_800/B56ZcfmO7xHUAc-/0/1748581806843?e=1781740800&v=beta&t=h6X6A2K_5qpOcds_CZp369EZanO53UwnFKHKUYu89Xw",
+    image: "https://i.ibb.co/vxyYyJhS/1748581806843.jpg",
     desc: "20 years of experience in event production, operations, logistics, execution and large-scale experience delivery. Expert in transforming ambitious ideas into flawlessly executed experiences.",
+    skills: ["Event Production", "Operations", "Logistics", "Vendor Management", "Execution", "Project Management"],
+  },
+
+  {
+    name: "Kulbir Singh",
+    role: "Master of Event Experience Director",
+    experience: "30 Years Experience",
+    image: "https://i.ibb.co/dsSkTNJB/1517755973817.jpg",
+    desc: "A seasoned business leader with over three decades of experience in corporate leadership, strategic planning and large-scale project execution. Kulbir mentors HappyWit's growth strategy, helping strengthen client relationships, operational excellence and long-term business partnerships.",
     skills: ["Event Production", "Operations", "Logistics", "Vendor Management", "Execution", "Project Management"],
   },
  
