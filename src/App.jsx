@@ -124,7 +124,7 @@ const capabilities = [
 ];
 
 const stats = [
-  { value: "15+", label: "Years of Experience" },
+  { value: "100+", label: "Years of Experience" },
   { value: "500+", label: "Experiences Supported" },
   { value: "8+", label: "Countries" },
   { value: "100+", label: "Brands Contributed To" },
