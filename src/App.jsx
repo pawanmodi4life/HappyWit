@@ -188,7 +188,7 @@ const team = [
     skills: ["Creative Strategy", "Storytelling", "Experience Design", "2D Design", "3D Visualization", "AI Experiences"],
   },
 
-  /*
+
   {
     name: "Rahul Tiwari",
     role: "Operational Intelligence Experience Director",
@@ -197,7 +197,7 @@ const team = [
     desc: "20 years of experience in event production, operations, logistics, execution and large-scale experience delivery. Expert in transforming ambitious ideas into flawlessly executed experiences.",
     skills: ["Event Production", "Operations", "Logistics", "Vendor Management", "Execution", "Project Management"],
   },
-  */
+ 
 ];
 
 const heroImage = "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=85";
@@ -652,13 +652,10 @@ export default function HappyWitWebsite() {
               </p>
 
               <div className="mt-9 grid gap-5 sm:grid-cols-2">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">Founder</p>
-                  <p className="mt-1 text-lg font-semibold text-white">Pawan Modi</p>
-                </div>
+                
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">Mobile</p>
-                  <a href="tel:+919999538659" className="mt-1 block break-words text-lg font-semibold text-white hover:text-[#FF9900]">+91 99995 38659</a>
+                  <a href="tel:+919999538659" className="mt-1 block break-words text-lg font-semibold text-white hover:text-[#FF9900]">+91 8851221600</a>
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">Email</p>
@@ -669,8 +666,8 @@ export default function HappyWitWebsite() {
                   <a href="https://www.happywitevents.com" target="_blank" rel="noopener noreferrer" className="mt-1 block break-words text-lg font-semibold text-white hover:text-[#FF9900]">www.happywitevents.com</a>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">Instagram</p>
-                  <a href="https://instagram.com/happywit" target="_blank" rel="noopener noreferrer" className="mt-1 block break-words text-lg font-semibold text-white hover:text-[#FF9900]">@happywit</a>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">LinkedIN</p>
+                  <a href="https://www.linkedin.com/company/happywit-experiences/" target="_blank" rel="noopener noreferrer" className="mt-1 block break-words text-lg font-semibold text-white hover:text-[#FF9900]">happywit-experiences</a>
                 </div>
               </div>
 
