@@ -588,7 +588,7 @@ export default function HappyWitWebsite() {
               <img
                 src={member.image}
                 alt={`${member.name} leadership profile`}
-                className={`h-80 w-full rounded-[1.5rem] object-cover object-center ${portraitTone}`}
+                className={`h-60 w-full rounded-[1.5rem] object-cover object-center ${portraitTone}`}
                 loading="lazy"
               />
               <div className="p-6">
