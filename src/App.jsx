@@ -139,8 +139,6 @@ const footprint = [
   { country: "UK", work: "Experience design and planning support", x: "43%", y: "28%" },
   { country: "Australia", work: "Creative development and experience thinking", x: "84%", y: "73%" },
   { country: "South Africa", work: "Strategic event planning and support", x: "52%", y: "73%" },
-
-  // New Countries
   { country: "Singapore", work: "Corporate events, regional leadership meetings and incentive programs", x: "74%", y: "59%" },
   { country: "Indonesia", work: "Brand activations, conferences and destination experiences", x: "78%", y: "65%" },
   { country: "China", work: "Product launches, exhibitions and business forums", x: "79%", y: "44%" },
