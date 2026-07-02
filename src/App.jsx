@@ -582,7 +582,7 @@ export default function HappyWitWebsite() {
             HappyWit is led by a combination of experience design, storytelling, production and operational expertise.
           </p>
         </div>
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mx-auto grid max-w-8xl gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {team.map((member) => (
             <div key={member.name} className="overflow-hidden rounded-[2rem] border border-black/10 bg-white p-3 shadow-sm">
               <img
