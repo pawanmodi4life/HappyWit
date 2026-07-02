@@ -597,7 +597,7 @@ export default function HappyWitWebsite() {
                 </div>
                 <h3 className="break-words text-3xl font-black">{member.name}</h3>
                 <p className="mt-2 font-semibold text-[#2563EB]">{member.role}</p>
-                <p className="mt-4 break-words leading-relaxed text-[#6B7280]">{member.desc}</p>
+                <p className="mt-3 break-words text-xs leading-5 text-[#6B7280]">{member.desc}</p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {member.skills.map((skill) => (
                     <span key={skill} className="rounded-full bg-[#F8FAFC] px-3 py-2 text-xs font-semibold text-[#4B5563]">
