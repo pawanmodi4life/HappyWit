@@ -193,7 +193,7 @@ const team = [
     experience: "20 Years Experience",
     image: "https://i.ibb.co/vxyYyJhS/1748581806843.jpg",
     desc: "20 years of experience in event production, operations, logistics, execution and large-scale experience delivery. Expert in transforming ambitious ideas into flawlessly executed experiences.",
-    skills: ["Event Production", "Operations", "Logistics", "Vendor Management", "Execution", "Project Management"],
+    skills: ["Event Production", "Operations", "Logistics", "Budget Management,", "Execution", "Global events"],
   },
 
   {
@@ -204,7 +204,23 @@ const team = [
     desc: "A seasoned business leader with over three decades of experience in corporate leadership, strategic planning and large-scale project execution. Kulbir mentors HappyWit's growth strategy, helping strengthen client relationships, operational excellence and long-term business partnerships.",
     skills: ["Event Production", "Operations", "Logistics", "Vendor Management", "Execution", "Project Management"],
   },
- 
+ {
+    name: "Anoop Chauhan",
+    role: "Operation Experience Director",
+    experience: "30 Years Experience",
+    image: "https://i.ibb.co/vxyYyJhS/1748581806843.jpg",
+    desc: "30 years of experience in event production, operations, logistics, execution and large-scale experience delivery. Expert in transforming ambitious ideas into flawlessly executed experiences.",
+    skills: ["Event Production", "Operations", "Logistics", "Vendor Management", "Execution", "Project Management"],
+  },
+
+  {
+    name: "Saurabh Sharma",
+    role: "AV Experience Director",
+    experience: "15 Years Experience",
+    image: "https://i.ibb.co/dsSkTNJB/1517755973817.jpg",
+    desc: "A seasoned business leader with over three decades of experience in corporate leadership, strategic planning and large-scale project execution. Kulbir mentors HappyWit's growth strategy, helping strengthen client relationships, operational excellence and long-term business partnerships.",
+    skills: ["Event Production", "Operations", "Logistics", "Vendor Management", "Execution", "Project Management"],
+  },
 ];
 
 const heroImage = "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=85";
